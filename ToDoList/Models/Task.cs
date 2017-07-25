@@ -5,7 +5,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Web;
 
-namespace ToDoList
+namespace ToDoList.Models
 {
     public class Task
     {
@@ -15,7 +15,8 @@ namespace ToDoList
         public bool IsDone { get; set; }
         DateTime DueDate { get; set; }
 
-        [ForeignKey]
+        [ForeignKey("List")]
         public int ListID { get; set; }
+        public virtual List List { get; set; } 
     }
 }
