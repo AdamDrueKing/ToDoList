@@ -13,7 +13,7 @@ namespace ToDoList.Models
         public int TaskID { get; set; }
         public string TaskDescription { get; set; }
         public bool IsDone { get; set; }
-        DateTime DueDate { get; set; }
+        DateTime DueDate { get; set; } //make public to show on screen
 
         [ForeignKey("List")]
         public int ListID { get; set; }

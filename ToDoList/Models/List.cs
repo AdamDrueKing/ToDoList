@@ -11,7 +11,7 @@ namespace ToDoList.Models
         [Key]
         public int ListID { get; set; }
         public string ListTitle { get; set; }
-        DateTime ListCreateDate { get; set; }
+        DateTime ListCreateDate { get; set; }  
 
         public virtual ICollection<Task> Tasks { get; set; }
     }
