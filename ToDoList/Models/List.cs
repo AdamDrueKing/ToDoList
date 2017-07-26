@@ -10,7 +10,9 @@ namespace ToDoList.Models
     {
         [Key]
         public int ListID { get; set; }
+        [Display(Name ="Task Name")]
         public string ListTitle { get; set; }
+        [Display(Name ="List Created Date")] 
         DateTime ListCreateDate { get; set; }  
 
         public virtual ICollection<Task> Tasks { get; set; }

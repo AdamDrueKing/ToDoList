@@ -18,7 +18,7 @@ namespace ToDoList.Controllers
         public ActionResult Index()
         {
             return View(db.Lists.ToList());
-        }
+         }
 
         // GET: Lists/Details/5
         public ActionResult Details(int? id)
